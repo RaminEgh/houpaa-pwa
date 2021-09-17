@@ -1,6 +1,9 @@
 import React from 'react';
-import {Container, ThemeProvider} from "@mui/material";
+import {Container} from "@mui/material";
+import { ThemeProvider } from '@mui/material/styles';
 import theme from "../Theme/theme";
+
+
 
 const Main = ({children}) => {
     const style = {
@@ -10,11 +13,12 @@ const Main = ({children}) => {
         height: '100vh',
     }
     return (
-        <ThemeProvider theme={theme}>
-            <Container maxWidth="md" sx={style}>
-                {children}
-            </Container>
-        </ThemeProvider>
+            <ThemeProvider theme={theme}>
+                <Container maxWidth="md" sx={style}>
+                    {children}
+                </Container>
+            </ThemeProvider>
+
     );
 };
 

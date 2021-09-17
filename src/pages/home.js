@@ -31,7 +31,7 @@ const Home = () => {
             {
                 mode === 'offline' ? <strong>You are in offline mode</strong> : null
             }
-            <List sx={{ width: '100%', bgcolor: 'background.paper' }} folders>
+            <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
                 {
                     data.map(item => {
                         return <React.Fragment key={item.id}>
