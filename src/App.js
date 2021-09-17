@@ -5,7 +5,7 @@ import Login from "./pages/login";
 
 function App() {
   return (
-    <main className="App">
+    <main dir='rtl' className="App">
       <Router>
         <Switch>
           <Main>
